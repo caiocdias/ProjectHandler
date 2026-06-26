@@ -1,0 +1,1147 @@
+{
+  "source": "ARQUIVOS PARA PROJETO.xlsx",
+  "entities": {
+    "postes": {
+      "display_name": "Postes",
+      "records": [
+        {
+          "altura_m": 9,
+          "resistencia_dan": 150,
+          "tipo": "CIRCULAR"
+        },
+        {
+          "altura_m": 9,
+          "resistencia_dan": 300,
+          "tipo": "CIRCULAR"
+        },
+        {
+          "altura_m": 10,
+          "resistencia_dan": 150,
+          "tipo": "CIRCULAR"
+        },
+        {
+          "altura_m": 10,
+          "resistencia_dan": 300,
+          "tipo": "CIRCULAR"
+        },
+        {
+          "altura_m": 10,
+          "resistencia_dan": 600,
+          "tipo": "CIRCULAR"
+        },
+        {
+          "altura_m": 11,
+          "resistencia_dan": 1000,
+          "tipo": "CIRCULAR"
+        },
+        {
+          "altura_m": 11,
+          "resistencia_dan": 300,
+          "tipo": "CIRCULAR"
+        },
+        {
+          "altura_m": 11,
+          "resistencia_dan": 600,
+          "tipo": "CIRCULAR"
+        },
+        {
+          "altura_m": 12,
+          "resistencia_dan": 1000,
+          "tipo": "CIRCULAR"
+        },
+        {
+          "altura_m": 12,
+          "resistencia_dan": 300,
+          "tipo": "CIRCULAR"
+        },
+        {
+          "altura_m": 12,
+          "resistencia_dan": 600,
+          "tipo": "CIRCULAR"
+        },
+        {
+          "altura_m": 13,
+          "resistencia_dan": 1000,
+          "tipo": "CIRCULAR"
+        },
+        {
+          "altura_m": 13,
+          "resistencia_dan": 600,
+          "tipo": "CIRCULAR"
+        },
+        {
+          "altura_m": 10,
+          "resistencia_dan": 150,
+          "tipo": "DUPLO T"
+        },
+        {
+          "altura_m": 10,
+          "resistencia_dan": 300,
+          "tipo": "DUPLO T"
+        },
+        {
+          "altura_m": 10,
+          "resistencia_dan": 600,
+          "tipo": "DUPLO T"
+        },
+        {
+          "altura_m": 11,
+          "resistencia_dan": 300,
+          "tipo": "DUPLO T"
+        },
+        {
+          "altura_m": 11,
+          "resistencia_dan": 600,
+          "tipo": "DUPLO T"
+        },
+        {
+          "altura_m": 12,
+          "resistencia_dan": 300,
+          "tipo": "DUPLO T"
+        },
+        {
+          "altura_m": 12,
+          "resistencia_dan": 600,
+          "tipo": "DUPLO T"
+        },
+        {
+          "altura_m": 13,
+          "resistencia_dan": 300,
+          "tipo": "DUPLO T"
+        },
+        {
+          "altura_m": 13,
+          "resistencia_dan": 600,
+          "tipo": "DUPLO T"
+        },
+        {
+          "altura_m": 15,
+          "resistencia_dan": 600,
+          "tipo": "DUPLO T"
+        },
+        {
+          "altura_m": 18,
+          "resistencia_dan": 600,
+          "tipo": "DUPLO T"
+        },
+        {
+          "altura_m": 9,
+          "resistencia_dan": 150,
+          "tipo": "DUPLO T"
+        },
+        {
+          "altura_m": 9,
+          "resistencia_dan": 300,
+          "tipo": "DUPLO T"
+        },
+        {
+          "altura_m": 9,
+          "resistencia_dan": 150,
+          "tipo": "MADEIRA"
+        },
+        {
+          "altura_m": 10,
+          "resistencia_dan": 150,
+          "tipo": "MADEIRA"
+        },
+        {
+          "altura_m": 10,
+          "resistencia_dan": 300,
+          "tipo": "MADEIRA"
+        },
+        {
+          "altura_m": 10,
+          "resistencia_dan": 600,
+          "tipo": "MADEIRA"
+        },
+        {
+          "altura_m": 11,
+          "resistencia_dan": 300,
+          "tipo": "MADEIRA"
+        },
+        {
+          "altura_m": 11,
+          "resistencia_dan": 600,
+          "tipo": "MADEIRA"
+        },
+        {
+          "altura_m": 12,
+          "resistencia_dan": 300,
+          "tipo": "MADEIRA"
+        },
+        {
+          "altura_m": 12,
+          "resistencia_dan": 600,
+          "tipo": "MADEIRA"
+        },
+        {
+          "altura_m": 13,
+          "resistencia_dan": 300,
+          "tipo": "MADEIRA"
+        },
+        {
+          "altura_m": 13,
+          "resistencia_dan": 600,
+          "tipo": "MADEIRA"
+        },
+        {
+          "altura_m": 15,
+          "resistencia_dan": 600,
+          "tipo": "MADEIRA"
+        },
+        {
+          "altura_m": 18,
+          "resistencia_dan": 600,
+          "tipo": "MADEIRA"
+        }
+      ]
+    },
+    "estruturas_mt": {
+      "display_name": "Estruturas MT",
+      "records": [
+        {
+          "nome": "U1",
+          "estilo_rede": "MONOF\u00c1SICA",
+          "tipo_rede": "CONVENCIONAL CA/CAA",
+          "cabos": "4 , 2 E 1/0",
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "U2",
+          "estilo_rede": "MONOF\u00c1SICA",
+          "tipo_rede": "CONVENCIONAL CA/CAA",
+          "cabos": "4 , 2 E 1/0",
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "U3",
+          "estilo_rede": "MONOF\u00c1SICA",
+          "tipo_rede": "CONVENCIONAL CA/CAA",
+          "cabos": "4 , 2 E 1/0",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "U4",
+          "estilo_rede": "MONOF\u00c1SICA",
+          "tipo_rede": "CONVENCIONAL CA/CAA",
+          "cabos": "4 , 2 E 1/0",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "N1",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "CONVENCIONAL CA/CAA",
+          "cabos": "4 , 2 E 1/0",
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "N2",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "CONVENCIONAL CA/CAA",
+          "cabos": "4 , 2 E 1/0",
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "N3",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "CONVENCIONAL CA/CAA",
+          "cabos": "4 , 2 E 1/0",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "N4",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "CONVENCIONAL CA/CAA",
+          "cabos": "4 , 2 E 1/0",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "TE",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "CONVENCIONAL CAA",
+          "cabos": "4 , 2 E 1/0",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "HT",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "CONVENCIONAL CAA",
+          "cabos": "4/0",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "HTE",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "CONVENCIONAL CAA",
+          "cabos": 336.6,
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "M1",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "CONVENCIONAL CA",
+          "cabos": "4 , 2 E 1/0",
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "M2",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "CONVENCIONAL CA",
+          "cabos": "4 , 2 E 1/0",
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "M3",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "CONVENCIONAL CA",
+          "cabos": "4 , 2 E 1/0",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "M4",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "CONVENCIONAL CA",
+          "cabos": "4 , 2 E 1/0",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "B1",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "CONVENCIONAL CA",
+          "cabos": "4 , 2 E 1/0",
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "B2",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "CONVENCIONAL CA",
+          "cabos": "4 , 2 E 1/0",
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "B3",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "CONVENCIONAL CA",
+          "cabos": "4 , 2 E 1/0",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "B4",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "CONVENCIONAL CA",
+          "cabos": "4 , 2 E 1/0",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "BE1",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "CONVENCIONAL CA",
+          "cabos": "4 , 2 E 1/0",
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "BE2",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "CONVENCIONAL CA",
+          "cabos": "4 , 2 E 1/0",
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "BE3",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "CONVENCIONAL CA",
+          "cabos": "4 , 2 E 1/0",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "BE4",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "CONVENCIONAL CA",
+          "cabos": "4 , 2 E 1/0",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "BS1",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "CONVENCIONAL CA",
+          "cabos": "4 , 2 E 1/0",
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "BS2",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "CONVENCIONAL CA",
+          "cabos": "4 , 2 E 1/0",
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "BS3",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "CONVENCIONAL CA",
+          "cabos": "4 , 2 E 1/0",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "BS4",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "CONVENCIONAL CA",
+          "cabos": "4 , 2 E 1/0",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "CM1",
+          "estilo_rede": "MONOF\u00c1SICA",
+          "tipo_rede": "PROTEGIDA",
+          "cabos": "50, 150 E 240",
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "CM2",
+          "estilo_rede": "MONOF\u00c1SICA",
+          "tipo_rede": "PROTEGIDA",
+          "cabos": "50, 150 E 240",
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "CM3",
+          "estilo_rede": "MONOF\u00c1SICA",
+          "tipo_rede": "PROTEGIDA",
+          "cabos": "50, 150 E 240",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "CM4",
+          "estilo_rede": "MONOF\u00c1SICA",
+          "tipo_rede": "PROTEGIDA",
+          "cabos": "50, 150 E 240",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "CMJ1",
+          "estilo_rede": "MONOF\u00c1SICA",
+          "tipo_rede": "PROTEGIDA",
+          "cabos": "50, 150 E 240",
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "CMJ2",
+          "estilo_rede": "MONOF\u00c1SICA",
+          "tipo_rede": "PROTEGIDA",
+          "cabos": "50, 150 E 240",
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "CE1",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "PROTEGIDA",
+          "cabos": "50, 150 E 240",
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "CE2",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "PROTEGIDA",
+          "cabos": "50, 150 E 240",
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "CE3",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "PROTEGIDA",
+          "cabos": "50, 150 E 240",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "CE4",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "PROTEGIDA",
+          "cabos": "50, 150 E 240",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "CEM4",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "PROTEGIDA",
+          "cabos": "50, 150 E 240",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "CEN3",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "PROTEGIDA",
+          "cabos": "50, 150 E 240",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "CEN4",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "PROTEGIDA",
+          "cabos": "50, 150 E 240",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "CEM1",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "PROTEGIDA",
+          "cabos": "50, 150 E 240",
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "CEM2",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "PROTEGIDA",
+          "cabos": "50, 150 E 240",
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "CEM3",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "PROTEGIDA",
+          "cabos": "50, 150 E 240",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "CEM4",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "PROTEGIDA",
+          "cabos": "50, 150 E 240",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "CEBS1",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "PROTEGIDA",
+          "cabos": "50, 150 E 240",
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "CEBS2",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "PROTEGIDA",
+          "cabos": "50, 150 E 240",
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "CEBS3",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "PROTEGIDA",
+          "cabos": "50, 150 E 240",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "CEBS4",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "PROTEGIDA",
+          "cabos": "50, 150 E 240",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "CEJ1",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "PROTEGIDA",
+          "cabos": "50, 150 E 240",
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "CEJ2",
+          "estilo_rede": "TRIF\u00c1SICA",
+          "tipo_rede": "PROTEGIDA",
+          "cabos": "50, 150 E 240",
+          "ancoragem": "N\u00c3O"
+        }
+      ]
+    },
+    "estruturas_bt": {
+      "display_name": "Estruturas BT",
+      "records": [
+        {
+          "nome": "S1N",
+          "tipo_rede": "CONVENCIONAL CA/CAA",
+          "cabos": "4 , 2, 1/0, 1N5, 1N2, 3N5",
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "S3R",
+          "tipo_rede": "CONVENCIONAL CA/CAA",
+          "cabos": "4 , 2, 1/0, 1N5, 1N2, 3N5",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "S4R",
+          "tipo_rede": "CONVENCIONAL CA/CAA",
+          "cabos": "4 , 2, 1/0, 1N5, 1N2, 3N5",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "SI1R",
+          "tipo_rede": "ISOLADA",
+          "cabos": 35,
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "SI1QR",
+          "tipo_rede": "ISOLADA",
+          "cabos": 70,
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "SAI1",
+          "tipo_rede": "ISOLADA",
+          "cabos": 35,
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "SAI1Q",
+          "tipo_rede": "ISOLADA",
+          "cabos": 70,
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "SI3R",
+          "tipo_rede": "ISOLADA",
+          "cabos": "35 E 70",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "SI4R",
+          "tipo_rede": "ISOLADA",
+          "cabos": "35 E 70",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "S13N",
+          "tipo_rede": "CONVENCIONAL CA",
+          "cabos": "4 , 2 E 1/0",
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "S23N",
+          "tipo_rede": "CONVENCIONAL CA",
+          "cabos": "4 , 2 E 1/0",
+          "ancoragem": "N\u00c3O"
+        },
+        {
+          "nome": "S33N",
+          "tipo_rede": "CONVENCIONAL CA",
+          "cabos": "4 , 2 E 1/0",
+          "ancoragem": "SIM"
+        },
+        {
+          "nome": "S43N3N",
+          "tipo_rede": "CONVENCIONAL CA",
+          "cabos": "4 , 2 E 1/0",
+          "ancoragem": "SIM"
+        }
+      ]
+    },
+    "cabos": {
+      "display_name": "Cabos",
+      "records": [
+        {
+          "nome": "A-4 CA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.7
+        },
+        {
+          "nome": "B-4 CA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.7
+        },
+        {
+          "nome": "C-4 CA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.7
+        },
+        {
+          "nome": "ABC-4 CA",
+          "tipo_rede": "TRIF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.7
+        },
+        {
+          "nome": "A-2 CA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.4
+        },
+        {
+          "nome": "B-2 CA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.4
+        },
+        {
+          "nome": "C-2 CA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.4
+        },
+        {
+          "nome": "ABC-2 CA",
+          "tipo_rede": "TRIF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.4
+        },
+        {
+          "nome": "A-1/0 CA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.3
+        },
+        {
+          "nome": "B-1/0 CA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.3
+        },
+        {
+          "nome": "C-1/0 CA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.3
+        },
+        {
+          "nome": "ABC-1/0 CA",
+          "tipo_rede": "TRIF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.3
+        },
+        {
+          "nome": "A-4/0 CA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.2
+        },
+        {
+          "nome": "B-4/0 CA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.2
+        },
+        {
+          "nome": "C-4/0 CA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.2
+        },
+        {
+          "nome": "ABC-4/0 CA",
+          "tipo_rede": "TRIF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.2
+        },
+        {
+          "nome": "A-336,6 CA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.1
+        },
+        {
+          "nome": "B-336,6 CA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.1
+        },
+        {
+          "nome": "C-336,6 CA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.1
+        },
+        {
+          "nome": "ABC-336,6 CA",
+          "tipo_rede": "TRIF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.1
+        },
+        {
+          "nome": "A-4 CAA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CAA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.7
+        },
+        {
+          "nome": "B-4 CAA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CAA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.7
+        },
+        {
+          "nome": "C-4 CAA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CAA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.7
+        },
+        {
+          "nome": "ABC-4 CAA",
+          "tipo_rede": "TRIF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CAA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.7
+        },
+        {
+          "nome": "A-2 CAA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CAA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.4
+        },
+        {
+          "nome": "B-2 CAA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CAA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.4
+        },
+        {
+          "nome": "C-2 CAA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CAA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.4
+        },
+        {
+          "nome": "ABC-2 CAA",
+          "tipo_rede": "TRIF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CAA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.4
+        },
+        {
+          "nome": "A-1/0 CAA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CAA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.3
+        },
+        {
+          "nome": "B-1/0 CAA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CAA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.3
+        },
+        {
+          "nome": "C-1/0 CAA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CAA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.3
+        },
+        {
+          "nome": "ABC-1/0 CAA",
+          "tipo_rede": "TRIF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CAA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.3
+        },
+        {
+          "nome": "A-4/0 CAA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CAA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.2
+        },
+        {
+          "nome": "B-4/0 CAA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CAA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.2
+        },
+        {
+          "nome": "C-4/0 CAA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CAA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.2
+        },
+        {
+          "nome": "ABC-4/0 CAA",
+          "tipo_rede": "TRIF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CAA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.2
+        },
+        {
+          "nome": "A-336,6 CAA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CAA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.1
+        },
+        {
+          "nome": "B-336,6 CAA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CAA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.1
+        },
+        {
+          "nome": "C-336,6 CAA",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CAA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.1
+        },
+        {
+          "nome": "ABC-336,6 CAA",
+          "tipo_rede": "TRIF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CAA",
+          "tensao_rede": "MT",
+          "fator_condenar": 1.1
+        },
+        {
+          "nome": "(N- 1N5)",
+          "tipo_rede": "MONOF\u00c1SICA/TRIF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CAA",
+          "tensao_rede": "BT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "(N- 3N5)",
+          "tipo_rede": "MONOF\u00c1SICA/TRIF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CAA",
+          "tensao_rede": "BT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "(N- 1N2)",
+          "tipo_rede": "MONOF\u00c1SICA/TRIF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CAA",
+          "tensao_rede": "BT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "(N-4 CA)",
+          "tipo_rede": "MONOF\u00c1SICA/TRIF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CA",
+          "tensao_rede": "BT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "(N-2 CA)",
+          "tipo_rede": "MONOF\u00c1SICA/TRIF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CA",
+          "tensao_rede": "BT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "(N-1/0 CA)",
+          "tipo_rede": "MONOF\u00c1SICA/TRIF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CA",
+          "tensao_rede": "BT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "(N-4/0 CA)",
+          "tipo_rede": "MONOF\u00c1SICA/TRIF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CA",
+          "tensao_rede": "BT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "(N-4 CAA)",
+          "tipo_rede": "MONOF\u00c1SICA/TRIF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CAA",
+          "tensao_rede": "BT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "(N-2 CAA)",
+          "tipo_rede": "MONOF\u00c1SICA/TRIF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CAA",
+          "tensao_rede": "BT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "(N-1/0 CAA)",
+          "tipo_rede": "MONOF\u00c1SICA/TRIF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CAA",
+          "tensao_rede": "BT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "(N-4/0 CAA)",
+          "tipo_rede": "MONOF\u00c1SICA/TRIF\u00c1SICA",
+          "estilo_rede": "CONVENCIONAL CAA",
+          "tensao_rede": "BT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "AM-50(3/8\")",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "PROTEGIDA",
+          "tensao_rede": "MT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "BM-50(3/8\")",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "PROTEGIDA",
+          "tensao_rede": "MT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "CM-50(3/8\")",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "PROTEGIDA",
+          "tensao_rede": "MT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "ABCM-50(3/8\")",
+          "tipo_rede": "TRIF\u00c1SICA",
+          "estilo_rede": "PROTEGIDA",
+          "tensao_rede": "MT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "AM-150(3/8\")",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "PROTEGIDA",
+          "tensao_rede": "MT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "BM-150(3/8\")",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "PROTEGIDA",
+          "tensao_rede": "MT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "CM-150(3/8\")",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "PROTEGIDA",
+          "tensao_rede": "MT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "ABCM-150(3/8\")",
+          "tipo_rede": "TRIF\u00c1SICA",
+          "estilo_rede": "PROTEGIDA",
+          "tensao_rede": "MT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "AM-240(3/8\")",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "PROTEGIDA",
+          "tensao_rede": "MT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "BM-240(3/8\")",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "PROTEGIDA",
+          "tensao_rede": "MT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "CM-240(3/8\")",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "PROTEGIDA",
+          "tensao_rede": "MT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "ABCM-240(3/8\")",
+          "tipo_rede": "TRIF\u00c1SICA",
+          "estilo_rede": "PROTEGIDA",
+          "tensao_rede": "MT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "AN-16(16)",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "ISOLADA",
+          "tensao_rede": "BT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "BN-16(16)",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "ISOLADA",
+          "tensao_rede": "BT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "ABN-16(16)",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "ISOLADA",
+          "tensao_rede": "BT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "AN-35(70)",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "ISOLADA",
+          "tensao_rede": "BT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "BN-35(70)",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "ISOLADA",
+          "tensao_rede": "BT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "ABN-35(70)",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "ISOLADA",
+          "tensao_rede": "BT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "ABN-70(70)",
+          "tipo_rede": "MONOF\u00c1SICA",
+          "estilo_rede": "ISOLADA",
+          "tensao_rede": "BT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "ABCN-35(70)",
+          "tipo_rede": "TRIF\u00c1SICA",
+          "estilo_rede": "ISOLADA",
+          "tensao_rede": "BT",
+          "fator_condenar": "-"
+        },
+        {
+          "nome": "ABCN-70(70)",
+          "tipo_rede": "TRIF\u00c1SICA",
+          "estilo_rede": "ISOLADA",
+          "tensao_rede": "BT",
+          "fator_condenar": "-"
+        }
+      ]
+    }
+  }
+}

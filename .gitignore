@@ -1,0 +1,56 @@
+# Python bytecode and caches
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+
+# Virtual environments and local tooling
+.venv/
+venv/
+env/
+ENV/
+.tox/
+.nox/
+
+# Packaging and build artifacts
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Coverage reports
+.coverage
+.coverage.*
+htmlcov/
+
+# Local configuration and secrets
+.env
+.env.*
+*.log
+
+# Local agent/editor/system files
+.agents/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local inputs, generated outputs, and scratch files
+tmp/
+temp/
+output/
+outputs/
+input/
+inputs/
+
+# Avoid committing customer/project source files by accident.
+# Keep generated vocabulary JSON under src/projecthandler/data/ versioned.
+/*.pdf
+/*.xlsx
+/*.xls
+/*.csv
