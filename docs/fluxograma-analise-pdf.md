@@ -8,14 +8,20 @@ Este documento descreve como o algoritmo do `ProjectHandler` lê um PDF de proje
 flowchart TD
     A["Usuário seleciona PDF"] --> B["PdfProjectParser.parse_file(path)"]
     B --> C["Ler páginas com pypdf"]
+    B --> C2["Ler palavras e objetos vetoriais com pdfplumber"]
     C --> D{"Alguma página tem texto?"}
     D -- "Sim" --> F["Usar texto extraído por pypdf"]
     D -- "Não" --> E["Ler páginas com pdfplumber"]
     E --> F
-    F --> G["Unir texto bruto para metadados"]
+    C2 --> F2{"Texto/layout extraído é pobre?"}
+    F2 -- "Sim" --> F3["Renderizar página e rodar OCR com Tesseract"]
+    F2 -- "Não" --> F
+    F3 --> F4["Mesclar texto OCR e caixas de palavras ao layout"]
+    F4 --> G["Unir texto bruto para metadados"]
+    F --> G
     G --> H["Extrair metadados do quadro do projeto"]
     H --> I["Percorrer páginas uma a uma"]
-    I --> J["Detectar postes"]
+    I --> J["Detectar postes por layout quando disponível"]
     J --> K["Detectar estruturas MT"]
     K --> L["Detectar estruturas BT"]
     L --> M["Detectar cabos"]
@@ -29,6 +35,8 @@ flowchart TD
 ## Fontes de Dados
 
 O vocabulário de entidades vem de `src/projecthandler/data/entity_definitions.json`, gerado a partir da planilha de exemplos pelo script `scripts/import_entities_from_excel.py`.
+
+Quando o PDF não expõe texto suficiente, o parser tenta um fallback OCR opcional. Esse fallback usa `PyMuPDF` para renderizar a página e o executável `tesseract` para gerar texto e caixas de palavras. Se essas dependências não estiverem disponíveis, o parser continua pelo caminho textual/layout padrão.
 
 O `EntityRepository` monta índices auxiliares:
 
@@ -52,15 +60,31 @@ O `EntityRepository` monta índices auxiliares:
 
 ```mermaid
 flowchart TD
-    A["Texto da página"] --> B["Carregar pares válidos altura-resistência"]
-    B --> C["Regex: altura-resistência"]
-    C --> D{"Par existe no vocabulário?"}
-    D -- "Não" --> E["Ignorar ocorrência"]
-    D -- "Sim" --> F["Criar EntityInstance tipo Postes"]
-    F --> G["Atributos: altura_m, resistencia_dan e tipo/tipos_possiveis"]
+    A["Página do PDF"] --> B{"Há layout extraído por pdfplumber?"}
+    B -- "Sim" --> C["Buscar palavras com padrão altura-resistência"]
+    B -- "Não" --> D["Usar regex no texto corrido"]
+    C --> E["Validar contexto por rótulos próximos ou marcador gráfico"]
+    E --> F["Procurar coordenada abaixo e alinhada ao poste"]
+    D --> G["Procurar coordenada logo após o poste no texto"]
+    F --> H{"Par existe no vocabulário?"}
+    G --> H
+    H -- "Não" --> I["Ignorar ocorrência"]
+    H -- "Sim" --> J["Criar EntityInstance tipo Postes"]
+    J --> K["Atributos: altura_m, resistencia_dan, tipo/tipos_possiveis e coordenada quando existir"]
 ```
 
 Exemplo detectável: `11-300`.
+
+Em PDFs carregados por arquivo, `_extract_poles_from_layout()` usa as posições das palavras:
+
+- identifica `altura-resistência`, como `10-150` ou `13-600`;
+- verifica se há rótulos técnicos próximos, como `U4(1)` e `S4R`, ou marcador gráfico vetorial próximo;
+- procura a coordenada abaixo do poste e horizontalmente alinhada ao rótulo.
+
+O par de coordenadas pode estar separado por quebra de linha, `/` ou `:`, como `0484323 7820699`, `0484354/7820724` ou `405403:7804399`.
+Quando o layout não está disponível, `_extract_poles()` mantém o fallback textual e procura a coordenada logo após o poste, parando antes do próximo padrão de poste.
+
+Em PDFs OCR, os rótulos podem vir ruidosos. O parser limpa variações comuns, como `[11-30`, `{11-304`, `1-601` e coordenadas com `,` ou caracteres soltos, antes de comparar com o vocabulário. Para evitar falsos positivos em notas e rodapés, postes vindos de OCR precisam ter coordenada associada por proximidade espacial.
 
 Quando mais de um tipo físico é possível para o mesmo par, o algoritmo registra `tipos_possiveis` em vez de escolher arbitrariamente.
 
@@ -136,4 +160,3 @@ A interface usa `Project.grouped_entities()` para agrupar as entidades por tipo 
 ## Manutenção Obrigatória
 
 Sempre que a lógica de análise for alterada em `parser.py`, `entity_repository.py`, `text_utils.py`, `scripts/import_entities_from_excel.py` ou no formato de `entity_definitions.json`, este fluxograma deve ser revisado e atualizado quando necessário.
-

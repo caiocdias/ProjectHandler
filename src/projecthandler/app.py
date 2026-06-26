@@ -374,6 +374,29 @@ class ProjectHandlerApp:
 
         self.entity_type_bar = tk.Frame(self.entities_tab, bg=COLORS["surface"])
         self.entity_type_bar.grid(row=0, column=0, sticky="ew", padx=16, pady=(14, 8))
+        self.entity_type_bar.columnconfigure(0, weight=1)
+
+        self.entity_type_canvas = tk.Canvas(
+            self.entity_type_bar,
+            height=42,
+            bg=COLORS["surface"],
+            bd=0,
+            highlightthickness=0,
+            relief="flat",
+        )
+        self.entity_type_canvas.grid(row=0, column=0, sticky="ew")
+        self.entity_type_scrollbar = ttk.Scrollbar(
+            self.entity_type_bar,
+            orient="horizontal",
+            command=self.entity_type_canvas.xview,
+        )
+        self.entity_type_scrollbar_visible = False
+        self.entity_type_canvas.configure(xscrollcommand=self.entity_type_scrollbar.set)
+
+        self.entity_type_strip = tk.Frame(self.entity_type_canvas, bg=COLORS["surface"])
+        self.entity_type_window = self.entity_type_canvas.create_window((0, 0), window=self.entity_type_strip, anchor="nw")
+        self.entity_type_strip.bind("<Configure>", self._sync_entity_type_scroll_region)
+        self.entity_type_canvas.bind("<Configure>", self._sync_entity_type_viewport)
 
         self.entities_canvas = tk.Canvas(self.entities_tab, bg=COLORS["surface"], bd=0, highlightthickness=0, relief="flat")
         self.entities_scrollbar = ttk.Scrollbar(self.entities_tab, orient="vertical", command=self.entities_canvas.yview)
@@ -391,6 +414,26 @@ class ProjectHandlerApp:
 
     def _sync_entities_width(self, event: tk.Event) -> None:
         self.entities_canvas.itemconfigure(self.entities_window, width=event.width)
+
+    def _sync_entity_type_scroll_region(self, _event: tk.Event | None = None) -> None:
+        self.entity_type_canvas.configure(scrollregion=self.entity_type_canvas.bbox("all"))
+        self._toggle_entity_type_scrollbar()
+
+    def _sync_entity_type_viewport(self, event: tk.Event) -> None:
+        self.entity_type_canvas.itemconfigure(self.entity_type_window, height=event.height)
+        self._toggle_entity_type_scrollbar()
+
+    def _toggle_entity_type_scrollbar(self) -> None:
+        bbox = self.entity_type_canvas.bbox("all")
+        if bbox and bbox[2] > max(self.entity_type_canvas.winfo_width(), 1):
+            if not self.entity_type_scrollbar_visible:
+                self.entity_type_scrollbar.grid(row=1, column=0, sticky="ew", pady=(4, 0))
+                self.entity_type_scrollbar_visible = True
+        else:
+            if self.entity_type_scrollbar_visible:
+                self.entity_type_scrollbar.grid_remove()
+                self.entity_type_scrollbar_visible = False
+            self.entity_type_canvas.xview_moveto(0)
 
     def _on_mousewheel(self, event: tk.Event) -> None:
         if self.active_tab == "summary":
@@ -518,23 +561,33 @@ class ProjectHandlerApp:
         return card
 
     def _render_entities(self, project: Project) -> None:
-        for child in self.entity_type_bar.winfo_children():
+        for button in self.entity_type_buttons.values():
+            button.destroy()
+        for child in self.entity_type_strip.winfo_children():
             child.destroy()
+        for child in self.entity_type_bar.winfo_children():
+            if child not in (self.entity_type_canvas, self.entity_type_scrollbar):
+                child.destroy()
         self.entity_type_buttons.clear()
 
         grouped = project.grouped_entities()
         if not grouped:
             self.active_entity_type = ""
+            self.entity_type_canvas.xview_moveto(0)
+            self.entity_type_canvas.configure(scrollregion=(0, 0, 0, 0))
+            if self.entity_type_scrollbar_visible:
+                self.entity_type_scrollbar.grid_remove()
+                self.entity_type_scrollbar_visible = False
             self._clear_entity_cards()
             self._build_empty_entities_state()
             return
 
         preferred = self.active_entity_type if self.active_entity_type in grouped else sorted(grouped)[0]
-        for index, (display_type, entities) in enumerate(sorted(grouped.items())):
+        for display_type, entities in sorted(grouped.items()):
             count = sum(max(entity.quantity, 1) for entity in entities)
             width = min(max(142, len(display_type) * 7 + 46), 230)
             button = RoundedButton(
-                self.entity_type_bar,
+                self.entity_type_strip,
                 f"{display_type} ({count})",
                 lambda entity_type=display_type: self._show_entity_type(entity_type),
                 width=width,
@@ -546,9 +599,12 @@ class ProjectHandlerApp:
                 selected_fill=COLORS["chip_bg"],
                 font=("Segoe UI", 9, "bold"),
             )
-            button.grid(row=index // 3, column=index % 3, sticky="w", padx=(0, 8), pady=(0, 8))
+            button.pack(side="left", padx=(0, 8), pady=0)
             self.entity_type_buttons[display_type] = button
 
+        self.entity_type_canvas.xview_moveto(0)
+        self.entity_type_strip.update_idletasks()
+        self._sync_entity_type_scroll_region()
         self._show_entity_type(preferred)
 
     def _show_entity_type(self, display_type: str) -> None:
@@ -692,4 +748,3 @@ def main() -> None:
     root = tk.Tk()
     ProjectHandlerApp(root)
     root.mainloop()
-
